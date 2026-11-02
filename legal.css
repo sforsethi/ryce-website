@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  --ink: #eef2ff;
+  --muted: #aab4ce;
+  --surface: rgba(20, 28, 48, 0.74);
+  --border: rgba(255, 255, 255, 0.1);
+  --violet: #a78bfa;
+  --cyan: #67e8f9;
+  --canvas: #090d18;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--canvas); }
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background: radial-gradient(circle at 8% 5%, rgba(139, 92, 246, 0.23), transparent 30rem), radial-gradient(circle at 90% 75%, rgba(6, 182, 212, 0.16), transparent 32rem), var(--canvas);
+  font: 16px/1.7 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a { color: var(--cyan); }
+a:hover { color: #fff; }
+.site-header, .legal-main, .site-footer { width: min(100% - 40px, 860px); margin: 0 auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 28px 0 20px; }
+.brand { color: #fff; font: 800 1.25rem/1 Outfit, sans-serif; text-decoration: none; }
+.brand-mark { color: var(--violet); }
+.back-link { color: var(--muted); font-weight: 600; text-decoration: none; }
+.back-link:hover { color: #fff; }
+.legal-main { padding: 30px 0 64px; }
+.legal-card { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; box-shadow: 0 24px 60px rgba(0,0,0,0.22); padding: clamp(28px, 6vw, 60px); }
+.eyebrow { color: var(--cyan); font-size: .78rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+h1, h2 { font-family: Outfit, sans-serif; color: #fff; line-height: 1.15; }
+h1 { margin: .45rem 0 .7rem; font-size: clamp(2.2rem, 7vw, 4rem); letter-spacing: -.04em; }
+h2 { margin: 2.5rem 0 .75rem; font-size: 1.35rem; }
+p, li { color: var(--muted); }
+p { margin: .75rem 0; }
+ul { padding-left: 1.25rem; }
+li + li { margin-top: .45rem; }
+.updated { color: #d9def0; font-size: .92rem; }
+.notice { margin-top: 1.5rem; padding: 1rem 1.15rem; border-left: 3px solid var(--violet); background: rgba(167, 139, 250, 0.1); border-radius: 0 12px 12px 0; }
+.site-footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--muted); font-size: .9rem; }
+.site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: .65rem; }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: #fff; }
+@media (max-width: 560px) { .site-header { padding-top: 22px; } .legal-main { padding-top: 14px; } }
