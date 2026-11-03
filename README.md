@@ -10,12 +10,12 @@ DNS: apex A records 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.1
 
 ## Recipe blog
 
-The first published recipe is `/recipes/pesto-gnocchi/`; `/recipes/` links to it. Data comes from the live public Firestore catalog, filtered to the app’s active packs. No Firebase writes or credentials are used.
+The public recipe blog is `/recipes/`, with an individual page for every active catalog recipe, for example `/recipes/pesto-gnocchi/`. Data comes from the live public Firestore catalog, filtered to the app’s active packs. No Firebase writes or credentials are used.
 
-Rebuild only the first recipe:
+Refresh and rebuild the full live catalog:
 
 ```sh
-python3 scripts/build-recipes.py --only pesto-gnocchi
+python3 scripts/build-recipes.py
 ```
 
-After the first page is approved, omit `--only` to build all active catalog recipes. Requires Python 3 and Pillow. Pages are static HTML, images are optimized transparent WebP files, and ingredient selections stay in browser session storage. Recipe copy, nutrition and colors come directly from Firebase. The snapshot contains only public catalog fields, without internal provenance or translation sidecars.
+For a single recipe preview, pass `--only pesto-gnocchi`. Every Cook button opens Ryce’s App Store listing. Requires Python 3 and Pillow. Pages are static HTML, images are optimized transparent WebP files, and ingredient selections stay in browser session storage. Recipe copy, nutrition and colors come directly from Firebase. The snapshot contains only public catalog fields, without internal provenance or translation sidecars.
