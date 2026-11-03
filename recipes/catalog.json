@@ -1,0 +1,73 @@
+{
+  "source": "Firebase public catalog",
+  "project": "ryce-f10a2",
+  "recipeCount": 1,
+  "collections": [
+    {
+      "id": "starter",
+      "name": "Ryce Starter Pack"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "pesto-gnocchi",
+      "recipe": {
+        "title": "Pesto Gnocchi",
+        "description": "Pillowy gnocchi tossed with pesto and cherry tomatoes. Store-bought pesto makes it nearly effortless.",
+        "minutes": 12,
+        "ingredients": [
+          "1 lb potato gnocchi",
+          "1/3 cup basil pesto",
+          "1 cup cherry tomatoes",
+          "1 tbsp olive oil",
+          "2 tbsp grated Parmesan"
+        ],
+        "steps": [
+          "Boil gnocchi until they float.",
+          "Warm tomatoes in olive oil.",
+          "Toss gnocchi with pesto and Parmesan."
+        ],
+        "nutrition": {
+          "proteinGrams": 12,
+          "fatsGrams": 22,
+          "calories": 510,
+          "carbsGrams": 68
+        },
+        "theme": {
+          "ctaFillHex": "#213712",
+          "textPrimaryHex": "#213712",
+          "backgroundGradient": [
+            {
+              "location": 0.0,
+              "hex": "#C8E88F"
+            },
+            {
+              "location": 0.62,
+              "hex": "#E8EABE"
+            },
+            {
+              "location": 1.0,
+              "hex": "#FFFFFF"
+            }
+          ],
+          "nutritionCardFillHex": "#DDF5A0",
+          "ctaTextHex": "#F3F8C8",
+          "accentHex": "#5C7427"
+        },
+        "imageURL": "https://firebasestorage.googleapis.com/v0/b/ryce-f10a2.firebasestorage.app/o/recipes%2Fpesto-gnocchi.png?alt=media&token=d07e418a-b841-4735-91ef-1b25d5aebea8"
+      },
+      "tags": [
+        "starter-pack",
+        "vegetarian",
+        "quick",
+        "dinner",
+        "under-15-minutes"
+      ],
+      "collections": [
+        "starter"
+      ],
+      "collectionName": "Ryce Starter Pack",
+      "image": "/assets/recipes/pesto-gnocchi-da87f3400f.webp"
+    }
+  ]
+}
